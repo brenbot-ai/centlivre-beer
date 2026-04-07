@@ -269,6 +269,69 @@ a:hover { color: var(--gold-light); }
 .legacy-card strong { color: var(--gold-light); }
 
 /* ===============================
+   Revival Section
+   =============================== */
+.section-revival {
+  background: linear-gradient(135deg, #0d1a0a 0%, #1a2e0a 50%, #0d1a0a 100%);
+  border-top: 1px solid rgba(240,192,64,0.2);
+  border-bottom: 1px solid rgba(240,192,64,0.2);
+}
+.revival-badge {
+  white-space: nowrap; font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  background: rgba(240,192,64,0.15); color: var(--gold-light);
+  border: 1px solid rgba(240,192,64,0.35); padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+}
+.nav-revival { color: var(--gold-light) !important; font-weight: 700 !important; }
+.revival-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+.revival-text h2 {
+  font-family: var(--font-serif); font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--cream); margin-bottom: 1.25rem; line-height: 1.2;
+}
+.revival-text p { color: var(--text-cream); margin-bottom: 1rem; line-height: 1.8; }
+.revival-text strong { color: var(--gold-light); }
+.revival-text blockquote {
+  border-left: 3px solid var(--gold); padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0 0; font-family: var(--font-fell); font-style: italic;
+  font-size: 1.1rem; color: var(--gold-light);
+  background: rgba(240,192,64,0.06); border-radius: 0 var(--radius) var(--radius) 0;
+}
+.revival-text blockquote cite { display: block; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.35rem; font-style: normal; }
+.revival-beers h3 {
+  font-family: var(--font-serif); font-size: 1.3rem; color: var(--gold-light);
+  margin-bottom: 1.25rem; padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(240,192,64,0.2);
+}
+.beer-card {
+  display: grid; grid-template-columns: 44px 1fr; gap: 1rem;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(240,192,64,0.12);
+  border-radius: var(--radius); padding: 1.25rem; margin-bottom: 1rem;
+  transition: background var(--transition);
+}
+.beer-card:hover { background: rgba(240,192,64,0.07); }
+.beer-icon { font-size: 1.75rem; }
+.beer-card h4 { font-family: var(--font-serif); color: var(--cream); margin-bottom: 0.2rem; }
+.beer-style { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+.beer-card p { color: var(--text-cream); font-size: 0.88rem; line-height: 1.65; }
+.beer-card p em { color: var(--amber-light); }
+.revival-where {
+  background: rgba(240,192,64,0.08); border: 1px solid rgba(240,192,64,0.25);
+  border-radius: var(--radius); padding: 1.25rem; margin-top: 0.5rem;
+}
+.revival-where h4 { color: var(--gold-light); margin-bottom: 0.5rem; font-size: 0.95rem; }
+.revival-where p { color: var(--text-cream); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; }
+.revival-where strong { color: var(--cream); }
+.btn-outline {
+  display: inline-block; border: 1px solid var(--gold); color: var(--gold);
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.05em;
+  padding: 0.5rem 1.25rem; border-radius: var(--radius);
+  transition: background var(--transition), color var(--transition);
+}
+.btn-outline:hover { background: var(--gold); color: var(--dark-brown); }
+@media (max-width: 900px) { .revival-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+/* ===============================
    Gallery
    =============================== */
 .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1rem; }
